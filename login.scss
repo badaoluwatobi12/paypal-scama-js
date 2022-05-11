@@ -1,0 +1,126 @@
+* {
+    margin-left: px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 100vh;
+    
+  }
+
+  
+  .container{
+    background-color:white;
+    border: #ccc solid 1px;
+    max-width: 380px;
+    width: 100%;
+    height: 65vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px ;
+   
+  } 
+ 
+
+form .user-details{
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.container .img-details{
+  margin-left: 30%;  
+  margin-bottom: 15px;
+    width: calc(100% );  
+}
+.container .img{
+  background-image: url(/pay.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 160px;
+  background-size: 150px;
+}
+
+ .user-details .input-box{
+  margin-left: 3%;  
+  margin-bottom: 15px;
+    width: calc(100% );    
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width:350px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color:#9b59b6 ;
+}
+
+form .button-details{
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: space-between;
+}
+
+
+.button-details .button{
+
+  margin-left: 3%;  
+  margin-bottom: 20px;
+  width: calc(100% );   
+  
+}
+.button-details .button input{
+  height: 45PX;
+  border: none;
+  width: 350px;
+  outline: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 25px;
+  letter-spacing: 1px;
+  background: linear-gradient( rgb(0, 140, 255) );
+}
+form .button input:hover{
+  background: linear-gradient( rgb(0, 140, 255) );
+}
+
+  form .button-details .txt{
+  margin-bottom: 25px;
+  margin-left: 100px;
+  }
+  .button-details .txt a{
+        font-size: 100%;
+        text-decoration: none;
+        color: rgb(0, 140, 255) ;
+        font-family: sans-serif;
+      }
+      @media (max-width: 768px){
+        .container{
+            border: none;
+        }
+        .container .img-details{
+          margin-left: 30%;  
+        }
+        form .user-details .input-box{
+          margin-left: 2%;  
+        }
+        form .button-details .txt{
+          margin-left: 25%;
+          }
+        .button-details .button{
+          margin-left: 2%;  
+        }
+      }

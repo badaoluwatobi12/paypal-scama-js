@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+rel = "stylesheet">
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="verify.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Verify</div>
+        <form>
+            <div class="user-details">
+            <div class="input-box">
+                <span class="details">Card Holder Name</span>
+                <input type="text" placeholder="Enter your name" id="hname" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Card Number</span>
+                <input type="number" class="ccFormatMonitor" id="hnum" placeholder="Card Number" required>
+            </div>
+           
+            <div class="input-box">
+                <span class="detailS">Expiration Date</span><br>
+                <i class="fa fa-cc-visa" aria-hidden="true" style="color: rgba(0, 0, 255, 0.74); background-color: white; font-size: 40px;"></i>
+                <i class="fa fa-cc-mastercard" aria-hidden="true" style="color:rgb(7, 115, 177); font-size: 40px;"></i>
+                <i class="fa fa-cc-discover" aria-hidden="true" style="color:rgb(10, 151, 233); font-size: 40px;"></i>
+                <i class="fa fa-cc-amex" aria-hidden="true" style="color:brown; font-size: 40px;"></i>
+<input type="text" id="exp" placeholder="MM / YY" maxlength='7' style="width: 35%" onkeyup="formatString(event)"; >
+<input type="text" placeholder="CVV" maxlength="3" style="width:25%; ">
+                
+            </div>
+            
+            <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="number" placeholder="Phone Number" id="num" required>
+            </div>
+            
+            <div class="input-box">
+                <span class="details">Address</span>
+                <input type="address" placeholder="Address" id="add" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Social Security Number(SSN)</span>
+                <input type="number" id="sssn" placeholder="SSN" maxlength="7" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Zip/Postal Code</span>
+                <input type="number" id="zipc" placeholder="Zip/Postal Code" required>
+            </div>
+            <div class="input-box">
+                <div class="button">
+                    <input type="submit" onclick="clk()" value="Register" style="border-radius: 200px;">
+                </div>
+            </div>
+            </div>
+        </form>
+    </div>
+    <script src="verify.js"></script>
+</body>
+</html>
